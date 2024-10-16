@@ -1,4 +1,14 @@
 #!/bin/bash
+############
+#About : This shell Script will Show all the members of your organztion who is collaborating in a repository
+#Input : 
+#
+#Owner:Md Abul bashar jehadi
+#
+##############
+
+helper()
+
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -35,6 +45,14 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+function helper{
+expected_cmd_srgd=2
+if [$# -ne $expected_cmd_srgd]; then
+ echo "please execute the script with required cmd args"
+ echo "asd"
+
+ }
 
 # Main script
 
